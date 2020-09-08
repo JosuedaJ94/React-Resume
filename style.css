@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#intro {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+
+address {
+  vertical-align: center;
+}

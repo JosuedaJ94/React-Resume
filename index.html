@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>React Hello World</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body >
+    <div id="root"></div>
+      <script src="https://unpkg.com/babel-standalone@6/babel.min.js">
+      </script>
+      <script src="https://unpkg.com/react@16/umd/react.development.js">
+      </script>
+
+      <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+      </script>
+
+      <script type="text/babel">
+        function App(props) {
+          return (
+            <div>
+              <header>
+                <h1>Sally Student</h1>
+              </header>               
+
+              <main>
+                <div id="intro">
+                  <address>
+                    <p>Email: Sally@sally.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                  </address>
+                  <img src="images/Lana.jpg" alt="Profile Picture" width="150" height="150"/>
+                </div>
+                <section>
+                  <h2>Education</h2>
+                  <p>University of Texas</p>
+                  <p>Major: Computer Science</p>
+                  <p>GPA: 4.0</p>
+                </section>
+
+                <section>
+                  <h2>Employment History</h2>
+                  <div>
+                    <p>Google</p>
+                    <p>Title: Programmer</p>
+                    <p>Start Date: 4/12</p>
+                    <p>End Date: Currently Employed</p>
+                    <p>
+                      Description: Create mobile applications for daily use. Maintain apps with security and software patches.
+                    </p>
+                  </div>
+                  <div>
+                    <p>Apple</p>
+                    <p>Title: Programmer</p>
+                    <p>Start Date: 1/10</p>
+                    <p>End Date: 4/12</p>
+                    <p>
+                      Description: Create mobile applications for daily use. Maintain apps with security and software patches.
+                    </p>
+                  </div>
+                </section>
+              </main>
+            </div>
+            
+            
+          );
+        }
+
+        ReactDOM.render(<App/>, document.querySelector('#root'));
+      </script>
+  </body>
+</html>
